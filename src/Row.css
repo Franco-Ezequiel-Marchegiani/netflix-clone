@@ -1,0 +1,28 @@
+.row{
+    margin-left: 20px;
+}
+.row__posters{
+    display: flex;
+    overflow-y: hidden; /* Oculta el contenido del eje y que sobre pase la pantalla */
+    overflow-x: scroll; /* Genera scroll horizontal */
+    padding: 10px;
+}
+.row__posters::-webkit-scrollbar{
+    display: none; /* Hace invisible el scroll eje x, pero funciona igual */
+}
+.row__poster{
+    object-fit: contain; /* Mantiene el aspecto del ratio, la calidad */
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+.row__poster:hover{
+    transform: scale(1.08);
+}
+.row__postersLarge{
+    max-height: 250px;
+}
+.row__postersLarge:hover{
+    transform: scale(1.09);
+}
