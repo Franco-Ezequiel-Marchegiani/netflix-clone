@@ -1,8 +1,10 @@
 .row{
-    margin-left: 20px;
+    color: #fff;
+    padding-left: 20px;
 }
 .row__posters{
     display: flex;
+    width: 100%;
     overflow-y: hidden; /* Oculta el contenido del eje y que sobre pase la pantalla */
     overflow-x: scroll; /* Genera scroll horizontal */
     padding: 10px;
@@ -12,7 +14,6 @@
 }
 .row__poster{
     object-fit: contain; /* Mantiene el aspecto del ratio, la calidad */
-    width: 100%;
     max-height: 100px;
     margin-right: 10px;
     transition: transform 450ms;
