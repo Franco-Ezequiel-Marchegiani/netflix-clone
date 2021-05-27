@@ -1,7 +1,7 @@
 .banner{
     color: white;
     object-fit: contain;
-    height: 448px;
+    height: 520px;
     width: 100%;
 }
 
@@ -41,7 +41,7 @@
 }
 /* Genera una especie de degradé con la imagen del banner */
 .banner--fadeBottom{
-    height: 7.4rem;
+    height: 12rem;
     background-image: linear-gradient(
         180deg,
         transparent,
