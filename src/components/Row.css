@@ -19,6 +19,7 @@
     transition: transform 450ms;
 }
 .row__poster:hover{
+    cursor: pointer;
     transform: scale(1.08);
 }
 .row__postersLarge{

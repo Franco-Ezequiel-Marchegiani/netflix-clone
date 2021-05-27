@@ -1,0 +1,155 @@
+.footer__container{
+    max-width: 60%;
+    margin: auto;
+}
+.footer__logos a img{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    padding: 64px 16px 8px 0px;
+    transition: transform 450ms;
+}
+.footer__logos a img:hover{
+    transform: scale(1.08);
+}
+.footer__text--col1{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "audioAndSubtitle audioAndDescriptive helpCenter cardGift"
+    "press investorRelations employment termsOfUse"
+    "privacity legalNotices cookiesPreference corporateInformation"
+    "contactUs . . .";
+}
+.footer__text1{
+    grid-area: audioAndSubtitle;  
+    padding-bottom: 16px; 
+}
+.footer__text2{
+    grid-area: audioAndDescriptive;   
+}
+.footer__text3{
+    grid-area: helpCenter;   
+}
+.footer__text4{
+    grid-area: cardGift;   
+}
+.footer__text5{
+    grid-area: press; 
+    padding-bottom: 16px;   
+}
+.footer__text6{
+    grid-area: investorRelations;   
+}
+.footer__text7{
+    grid-area: employment;   
+}
+.footer__text8{
+    grid-area: termsOfUse;   
+}
+.footer__text9{
+    grid-area: privacity; 
+    padding-bottom: 16px;   
+}
+.footer__text10{
+    grid-area: legalNotices; 
+}
+.footer__text11{
+    grid-area: cookiesPreference;   
+}
+.footer__text12{
+    grid-area: corporateInformation;   
+}
+.footer__text13{
+    grid-area: contactUs; 
+    padding-bottom: 16px;   
+}
+.footer__text a{
+    text-decoration:none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    color: rgb( 128, 128, 128);
+    font-size: 13px;
+    line-height: 15.6px;
+}
+.footer__text a:hover{
+    text-decoration: underline;
+}
+
+.footer__copyright{
+    color: rgb( 128, 128, 128);
+    font-size: 11px;
+    padding-bottom: 40px;
+    line-height: 13.2px;
+}
+@media only screen and (max-width: 900px){
+    .footer__container{
+        max-width: 60%;
+        margin: auto;
+    }
+    .footer__text a{
+        font-size: 11px;
+    }
+    .footer__text--col1{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: 
+        "audioAndSubtitle audioAndDescriptive"
+        "helpCenter cardGift"
+        "press investorRelations"
+        "employment termsOfUse"
+        "privacity legalNotices"
+        "cookiesPreference corporateInformation"
+        "contactUs .";
+    }
+    .footer__text1{
+        grid-area: audioAndSubtitle;  
+        padding-bottom: 16px; 
+    }
+    .footer__text2{
+        grid-area: audioAndDescriptive;   
+    }
+    .footer__text3{
+        grid-area: helpCenter;   
+    }
+    .footer__text4{
+        grid-area: cardGift;   
+    }
+    .footer__text5{
+        grid-area: press; 
+        padding-bottom: 16px;   
+    }
+    .footer__text6{
+        grid-area: investorRelations;   
+    }
+    .footer__text7{
+        grid-area: employment;   
+    }
+    .footer__text8{
+        grid-area: termsOfUse;   
+    }
+    .footer__text9{
+        grid-area: privacity; 
+        padding-bottom: 16px;   
+    }
+    .footer__text10{
+        grid-area: legalNotices; 
+    }
+    .footer__text11{
+        grid-area: cookiesPreference;   
+    }
+    .footer__text12{
+        grid-area: corporateInformation;   
+    }
+    .footer__text13{
+        grid-area: contactUs; 
+        padding-bottom: 16px;   
+    }
+    .footer__copyright{
+        font-size: 9px;
+    }
+}
